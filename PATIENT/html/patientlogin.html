@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/PATIENT/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .bs-example {
+            margin: 0px;
+
+        }
+
+        .navbar-brand {
+            font-size: 20px;
+            font-family: sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-dark  fixed-top bg-danger p-2">
+            <a href="/" class="navbar-brand "><i class="fas fa-heartbeat"></i>&nbsp; Blood Bank Management System</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between " id="navbarCollapse">
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 justify-content-end">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/MAIN HOME/html/Mainhome.html"><i
+                                    class="fas fa-home"></i>&nbsp; Home</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/PATIENT/html/patientlogin.html"><i
+                                    class="fas fa-procedures"></i>&nbsp; Patient</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/DONOR/html/Donorlogin.html"><i
+                                    class="fas fa-user"></i>&nbsp; Donor</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/ADMIN/html/Adminlogin.html"><i
+                                    class="fas fa-user-shield"></i>&nbsp; Admin</i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 mt-5">
+                <form class="donorform  mt-3 pt-3">
+
+                    <h1 class="text-center  text-danger fw-bold fs-2 ">PATIENT LOGIN</h1>
+                    <div class="form-group  mt-5 mb-4 mx-5 ">
+                        <input type="text" id="txtname" placeholder="enter your Email" class="form-control   ">
+                    </div>
+                    <div class="form-group   mb-4 mx-5">
+                        <input type="password" placeholder="enter your password" class="form-control  ">
+                    </div>
+                    <div class=" form-group ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 offset-3 mb-3">
+                                    <!-- <input type="button" value="Login"
+                                        class="btn btn-danger bg-danger text-light w-100 btn-lg border fw-bold" href="patientdashboard.html"> -->
+                                        <a class="btn btn-danger bg-danger text-light w-100 btn-lg fw-bold"  href="/PATIENT/html/patientdashboard.html" role="button" >
+                                            Login
+                                          </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 offset-3">
+                            <div class="form-group text-dark mb-5 ">
+                                <p>Don't have an account?
+                                    <a href="patientRegister.html"
+                                        class="text-danger text-decoration-none  fw-bold fs-5">
+                                        Register!
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xl-6 mt-5">
+                <img src="https://media.istockphoto.com/id/1488086932/vector/a-female-volunteer-donates-blood-in-a-hospital.jpg?s=612x612&w=0&k=20&c=8Ypo7fI0pPzHjVY1Mc3F-9VOFrk_yCu6nH8khzdNQ-E="
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

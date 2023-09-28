@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>side bar</title>
+  <link rel="stylesheet" href="/ADMIN/css/sidebar.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="admin_nav">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger p-2">
+      <a href="/" class="navbar-brand"><i class="fas fa-heartbeat"></i>&nbsp; Blood Bank Management System</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <a href="\"> <i class="bi bi-box-arrow-right"></i></a>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- sidebar -->
+    <div class="container-fluid ">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block  sidebar collapse border border-3 border-danger">
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column col-12">
+              <li class="nav-item">
+                <a class="nav-link active text-danger fw-bold" aria-current="page" href="/MAIN HOME/html/Mainhome.html">
+                  <span data-feather="home"></span>
+                  Home
+                </a>
+              </li>
+              <hr>
+              <li class="nav-item ">
+                <a class="nav-link text-danger fw-bold" href="donordetails.html">
+                  <span data-feather="file"></span>
+                  Donor Details
+
+                </a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link text-danger fw-bold" href="patientdetails.html">
+                  <span data-feather="file"></span>
+                  Patient Details
+                </a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link  text-danger fw-bold" href="donations.html">
+                  <span data-feather="users"></span>
+                  Donations
+                </a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link  text-danger fw-bold" href="bloodrequest.html">
+                  <span data-feather="file"></span>
+                  Blood Request
+                </a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link  text-danger fw-bold" href="#">
+                  <span data-feather="file"></span>
+                  Request History
+                </a>
+              </li>
+              <hr>
+
+              <li class="nav-item">
+                <a class="nav-link text-danger fw-bold" href="#">
+                  <span data-feather="file"></span>
+                  Blood Stock
+                </a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link text-danger fw-bold" style="color: black;" href="">
+                  <span data-feather="file"></span>Logout
+                  <i class=" fas fa-sign-out-alt fs-4"></i>
+                </a>
+            </ul>
+          </div>
+        </nav>
+
+
+      </div>
+      <!-- .end sidebar -->
+
+</body>
+
+</html>

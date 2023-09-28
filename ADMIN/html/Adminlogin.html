@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Login - Admin</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="/ADMIN/css/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .bs-example {
+            margin: 0px;
+
+        }
+
+        .navbar-brand {
+            font-size: 20px;
+            font-family: sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-dark  fixed-top bg-danger p-2">
+            <a href="/" class="navbar-brand "><i class="fas fa-heartbeat"></i>&nbsp; Blood Bank Management System</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between " id="navbarCollapse">
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 justify-content-end">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/MAIN HOME/html/Mainhome.html"><i
+                                    class="fas fa-home"></i>&nbsp; Home</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/PATIENT/html/patientlogin.html"><i
+                                    class="fas fa-procedures"></i>&nbsp; Patient</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/DONOR/html/Donorlogin.html"><i
+                                    class="fas fa-user"></i>&nbsp; Donor</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="/ADMIN/html/Adminlogin.html"><i
+                                    class="fas fa-user-shield"></i>&nbsp; Admin</i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <body>
+            <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+                <div class="wrapper wrapper--w790">
+                    <br><br><br>
+                    <div class="card card-5 col-8 offset-2">
+                        <div class="heading ">
+                            <h2 class="title text-danger mt-3 fs-3 fw-bold">Admin Login</h2>
+                        </div>
+                        <div class="card-body" style="background-image:url(https://media.istockphoto.com/id/1334961191/vector/blood-donors-vector-illustration.jpg?s=612x612&w=0&k=20&c=jyL6Hf7JYoopq63nLqykkYMZU-uOWbxEhiR3jrRcjrc=) ;background-repeat: no-repeat;background-size: cover;">
+                            <form method="POST">
+
+                                <div class="form-row">
+                                    <input class="form-control" id="inputEmail" type="email"
+                                        placeholder="name@example.com" />
+                                    <label for="inputEmail">Email</label>
+                                </div>
+                                    <div class="form-row">
+                                        <input class="form-control" id="inputPassword" type="password"
+                                            placeholder="Password" />
+                                        <label for="inputPassword">Password</label>
+                                    </div>
+                                </div>
+                                 <div class="text-center">
+                                    <!-- <button class="btn btn--radius-2 btn-danger btn-block mb-5"  type="submit">Login</button> -->
+                                    <a class="btn btn--radius-2 btn-danger btn-block mb-2 mt-1 " href="/ADMIN/html/admindashboard.html">Login</a>
+                                </div>
+                                <div class="text-center mb-5">
+                                    <a class="small  text-dark  text-center fs-6" href="password.html">Forgot Password?</a>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- <div id="layoutAuthentication">
+            <div id="layoutAuthentication_content">
+                <main class="admin-login">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <img src="https://media.istockphoto.com/id/1334961191/vector/blood-donors-vector-illustration.jpg?s=612x612&w=0&k=20&c=jyL6Hf7JYoopq63nLqykkYMZU-uOWbxEhiR3jrRcjrc="
+                                    class="image-fluid mt-5" alt="">
+                            </div>
+                            <div class="offset-1 col-lg-5">
+                                <div class=" border-0 rounded-lg ">
+                                    <div class="header"><h3 class="text-center fs-3 text-danger fw-bold">ADMIN LOGIN</h3></div>
+                                    <div class="card-body">
+                                        <form class="adminform mt-5">
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
+                                                <label for="inputEmail">Email address</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
+                                                <label for="inputPassword">Password</label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
+                                                <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                                <a class="small  text-dark text-decoration-none" href="password.html">Forgot Password?</a>
+                                                <a class="btn btn-danger col-lg-4" href="/ADMIN/html/admindashboard.html">Login</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script> -->
+        </body>
+
+</html>

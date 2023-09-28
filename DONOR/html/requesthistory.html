@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link rel="stylesheet" href="/DONOR/css/sidebar.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/DONOR/css/main.css">
+</head>
+    
+    
+    <body>
+    
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-danger p-2">
+            <a style="color:white;" class="navbar-brand  " href="/"><i class="fa fa-heartbeat"></i>&nbsp;
+                    Blood Bank Management System</a>
+    
+    
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 justify-content-end ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light  "  href="/logout">Logout &nbsp; <i
+                                class="fas fa-power-off"></i></a>
+                    </li>
+    
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="wrapper">
+            <div class="sidebar ">
+                <ul >
+                    <li><a style="text-decoration:none;" href="/MAIN HOME/html/Mainhome.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a style="text-decoration:none;" href="donardashboard.html"><i
+                        class="fas fa-columns"></i>Dashboard</a></li>
+                    <li><a style="text-decoration:none;" href="donateblood.html"><i class="fas fa-user"></i>Donate Blood</a></li>
+                    <li><a style="text-decoration:none;" href="donationhistory.html"><i
+                                class="fas fa-user-injured"></i>Donation History</a></li>
+                    <li><a style="text-decoration:none;" href="bloodrequest.html"><i class="fas fa-sync-alt"></i>Blood
+                            Requests</a></li>
+                    <li><a style="text-decoration:none;" href="requesthistory.html"><i class="fas fa-history"></i>Request
+                            History</a></li>
+                </ul>
+        
+            </div>
+         <!-- .end sidebar -->
+
+         <div class="main_content">
+            <br><br>
+            <div class="container">
+                <H4 class="text-center fw-bold text-danger fs-3 fw-bold">Request History</H4><br>
+                <table class="table table-danger table-striped table-hover table-bordered table-striped">
+                    <thead class="bg-dark">
+                        <tr>
+                            <th scope="col" class="text-light table-dark">Donor Name</th>
+                            <th scope="col" class="text-light table-dark">Donor Age</th>
+                            <th scope="col" class="text-light table-dark">Disease</th>
+                            <th scope="col" class="text-light table-dark">Blood Group</th>
+                            <th scope="col" class="text-light table-dark">Unit</th>
+                            <th scope="col" class="text-light table-dark">Date</th>
+                            <th class="text-light table-dark">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>..</td>
+                            <td>..</td>
+                            <!-- <td> <img sr"{% static t.profile_pic.url %}" alt="Profile Pic" height="40px" width="40px" /></td> -->
+                            <td>..</td>
+                            <td>..</td>
+                            <td>..</td>
+                            <td>..</td>
+                            
+                            <td>
+                                <button class="btn btn-success btn-sm"><a  style="text-decoration: none;color: white;" href="#">Pending</a> </button>
+                                <!-- <button class="btn btn-danger btn-sm"><a  style="text-decoration: none;color: white;" href="#">Delete</a> </button> -->
+                            </td>
+                        </tr>
+                     </tbody>
+               </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="headrequesthistory ">
+        <h1 class="mt-5 text-center text-danger fs-3 offset-2">BLOOD REQUESTS</h1>
+    </div>
+    <div class="col-8 offset-3 mt-5">
+        <table class="table table-bordered border-dark table-striped table-danger">
+            <tr class="table-dark">
+                <th>Patient Name</th>
+                <th> Age</th>
+                <th>Reason</th>
+                <th>Bloodgroup</th>
+                <th>Unit</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>..</td>
+                <td>..</td>
+                <td>..</td>
+                <td>..</td>
+                <td>..</td>
+                <td>..</td>
+                <td>
+                    <button class="btb btn-success mx-1 px-3">
+                       Pending
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div> -->
+</body>
+
+</html>
